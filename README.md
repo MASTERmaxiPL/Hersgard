@@ -5,12 +5,12 @@ Game uses Ink for dialogue system.
 
 ## Prepared Systems
 
-- Player Movement System
-- Character Creator System
-- Player UI System
-- Dialogue System
-- Inventory System
-- Saving System System
+- Player Movement
+- Character Creator
+- Player UI
+- Dialogue
+- Inventory
+- Saving
 
 ## Keybindings
 
@@ -18,82 +18,82 @@ Game uses Ink for dialogue system.
 
 #### Player
 
-movement - wsad or arrow keys
+- movement - wsad or arrow keys
 
-run - Shift
+- run - Shift
 
-interact - e
+- interact - e
 
-roll - Space
+- roll - Space
 
-dodge - Ctrl
+- dodge - Ctrl
 
 #### UI
 
-open inventory - i
+- open inventory - i
 
-open menu - Escape
+- open menu - Escape
 
-open map - m
+- open map - m
 
-open quests - k
+- open quests - k
 
-open skills - l
+- open skills - l
 
-open bestiary - o
+- open bestiary - o
 
-open inventory - i
+- open inventory - i
 
 #### Dialogue
 
-skip dialogue - Space
+- skip dialogue - Space
 
-choose dialogue option - Enter 
+- choose dialogue option - Enter 
 
 #### Inventory
 
-select item - mouse left btn
+- select item - mouse left btn
 
-pass item to/ from chest or equip item - right click
+- pass item to/ from chest or equip item - right click
 
-delete item - x
+- delete item - x
 
-use item - e
+- use item - e
 
 ### Gamepad ( Xbox Controller )
 
 #### Player
-movement - left stick
+- movement - left stick
 
-interact - Y
+- interact - Y
 
-run - right trigger
+- run - right trigger
 
-roll - left trigger
+- roll - left trigger
 
 #### UI
 
-open inventory - menu btn
+- open inventory - menu btn
 
-open menu - view btn
+- open menu - view btn
 
-open map - right bumper
+- open map - right bumper
 
 #### Dialogue
 
-skip dialogue - X
+- skip dialogue - X
 
-choose dialogue option - A 
+- choose dialogue option - A 
 
 #### Inventory
 
-select item - A
+- select item - A
 
-pass item to/ from chest or equip item - X
+- pass item to/ from chest or equip item - X
 
-delete item - B
+- delete item - B
 
-use item - Y
+- use item - Y
 
 ### Note
 
@@ -103,16 +103,16 @@ Gamepad bindings aren't ready yet.
 
 ## Screens from the game
 
-<img src="./Assets/Artwork/mainMenuScreen.png" alt="main menu image" width="600"/>
+<img src="./Assets/Artwork/GameScreens/mainMenuScreen.png" alt="main menu image" width="600"/>
 
-<img src="./Assets/Artwork/characterCreatorScreen.png" alt="character creator image" width="600"/>
+<img src="./Assets/Artwork/GameScreens/characterCreatorScreen.png" alt="character creator image" width="600"/>
 
-<img src="./Assets/Artwork/inventoryScreen.png" alt="inventory image" width="600"/>
+<img src="./Assets/Artwork/GameScreens/inventoryScreen.png" alt="inventory image" width="600"/>
 
-<img src="./Assets/Artwork/chestScreen.png" alt="chest image" width="600"/>
+<img src="./Assets/Artwork/GameScreens/chestScreen.png" alt="chest image" width="600"/>
 
-<img src="./Assets/Artwork/dialogueScreen.png" alt="dialogue image" width="600"/>
+<img src="./Assets/Artwork/GameScreens/dialogueScreen.png" alt="dialogue image" width="600"/>
 
-<img src="./Assets/Artwork/mapScreen.png" alt="map image" width="600"/>
+<img src="./Assets/Artwork/GameScreens/mapScreen.png" alt="map image" width="600"/>
 
-<img src="./Assets/Artwork/savingScreen.png" alt="saving image" width="600"/>
+<img src="./Assets/Artwork/GameScreens/savingScreen.png" alt="saving image" width="600"/>
