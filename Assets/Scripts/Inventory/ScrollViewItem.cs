@@ -3,8 +3,6 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using TMPro;
 using System.Collections;
-using Unity.VisualScripting;
-using static UnityEditor.Progress;
 
 public class ScrollViewItem : MonoBehaviour, IPointerClickHandler
 {

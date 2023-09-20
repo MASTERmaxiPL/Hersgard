@@ -1,10 +1,5 @@
 using System.Collections;
-using System.Linq;
-using Ink.Parsed;
-using UnityEditor.Animations;
-using UnityEditorInternal.Profiling.Memory.Experimental;
 using UnityEngine;
-using UnityEngine.InputSystem.XR;
 
 public class EquipmentSlots : MonoBehaviour
 {
@@ -19,10 +14,10 @@ public class EquipmentSlots : MonoBehaviour
     [SerializeField] private ScrollViewEquipment bootsSlotItem;
 
 
-    [SerializeField] private AnimatorController helmetAnimController;
-    [SerializeField] private AnimatorController chestAnimController;
-    [SerializeField] private AnimatorController legsAnimController;
-    [SerializeField] private AnimatorController bootsAnimController;
+    [SerializeField] private RuntimeAnimatorController helmetAnimController;
+    [SerializeField] private RuntimeAnimatorController chestAnimController;
+    [SerializeField] private RuntimeAnimatorController legsAnimController;
+    [SerializeField] private RuntimeAnimatorController bootsAnimController;
 
     protected bool isMarked = false;
 
@@ -175,7 +170,7 @@ public class EquipmentSlots : MonoBehaviour
     {
         slot.SetItem(null);
     }
-    private void SetVisuals(Animator visuals,Equipment item, AnimatorController controller)
+    private void SetVisuals(Animator visuals,Equipment item, RuntimeAnimatorController controller)
     {
         visuals.runtimeAnimatorController = item.animController;
         StartCoroutine(WaitAndPrint(0.3f));
@@ -185,7 +180,7 @@ public class EquipmentSlots : MonoBehaviour
             visuals.runtimeAnimatorController = controller;
         }
     }
-    private void UnsetVisuals(Animator visuals, Equipment item, AnimatorController controller)
+    private void UnsetVisuals(Animator visuals, Equipment item, RuntimeAnimatorController controller)
     {
         if (ChestInvManager.GetInstance().GetisInventoryVisualsOn())
             visuals.runtimeAnimatorController = controller;

@@ -7308,12 +7308,10 @@ MonoBehaviour:
   backKeybindsSettings: {fileID: 1288759419}
   backSoundSettings: {fileID: 383523523}
   title: {fileID: 2040079228}
-  SaveLimitText: {fileID: 913040073}
   helemtVisuals: {fileID: 1173952457}
   chestVisuals: {fileID: 916062851}
   legsVisuals: {fileID: 339364712}
   bootsVisuals: {fileID: 114002647}
-  SaveSlotDropdown: {fileID: 1892663779}
   isDropMenuOpened: 0
 --- !u!114 &553181376
 MonoBehaviour:
@@ -24854,7 +24852,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -29.999817}
+  m_AnchoredPosition: {x: 0, y: -29.999756}
   m_SizeDelta: {x: -40, y: -60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1769182911

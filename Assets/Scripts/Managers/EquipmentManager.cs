@@ -1,10 +1,7 @@
 using System.Collections;
 using System.Linq;
-using Unity.VisualScripting;
-using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.UI;
-using static UnityEditor.Progress;
 
 public class EquipmentManager : MonoBehaviour, IData
 {
