@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fba75504b60ba4f9a75803afbde5cd, type: 3}
+  m_Name: CharacterBody
+  m_EditorClassIdentifier: 
+  characterBodyParts:
+  - {fileID: 9100000, guid: b7e79918c6435e043bf0f120161c519c, type: 2}
+  - {fileID: 9100000, guid: 38cf6aaf363d5644baee495c174fc64a, type: 2}
+  - {fileID: 22100000, guid: 10c4a66f1ac1a0c4baa4fa4444860ced, type: 2}
+  - {fileID: 9100000, guid: ba5ad32002d956c479f1dc5d2af85911, type: 2}
+  - {fileID: 9100000, guid: c3967631ecc1c4941aa19873c0091ac4, type: 2}
+  - {fileID: 9100000, guid: 1ad696261d8d93840a21fb85e37bc443, type: 2}
+  - {fileID: 9100000, guid: a37e03588c9cf1543a270ea089fcadc6, type: 2}
+  - {fileID: 9100000, guid: fdb971ce1616a4a4d83d954c858f0c1e, type: 2}
+  colorList:
+  - serializedVersion: 2
+    rgba: 4280427042
+  - serializedVersion: 2
+    rgba: 4294967295

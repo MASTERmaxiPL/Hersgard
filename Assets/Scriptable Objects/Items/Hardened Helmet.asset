@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bdff70b34ae6694294299ff9dbb7a23, type: 3}
+  m_Name: Hardened Helmet
+  m_EditorClassIdentifier: 
+  itemName: Leather Helmet
+  icon: {fileID: 21300000, guid: 9e702f301866ca5439c04015c6ab72db, type: 3}
+  price: 8
+  weight: 1.2
+  amount: 1
+  inChestAmount: 1
+  canStack: 0
+  canUse: 0
+  canEquip: 1
+  equipSlot: 0
+  armorModifier: 3
+  damageModifier: 1
+  animController: {fileID: 22100000, guid: 1a6b486f863a90344bae58243cbbdd1a, type: 2}

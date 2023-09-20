@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Interactible
+  - UI
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - Map
+  - Blocking
+  - Creature
+  - Cursor
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Ground
+    uniqueID: 747445487
+    locked: 0
+  - name: Structures
+    uniqueID: 1230451171
+    locked: 0
+  - name: Item
+    uniqueID: 3765881199
+    locked: 0
+  - name: Creature
+    uniqueID: 372343231
+    locked: 0
+  - name: Interact
+    uniqueID: 107069177
+    locked: 0
+  - name: UI
+    uniqueID: 1298750431
+    locked: 0
+  - name: Cursor
+    uniqueID: 107069177
+    locked: 0
