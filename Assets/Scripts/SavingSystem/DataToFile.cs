@@ -6,6 +6,7 @@ using System.IO;
 using UnityEngine.Networking.Types;
 using System.Linq;
 using System.IO.Enumeration;
+using Unity.VisualScripting;
 
 public class DataToFile
 {
@@ -22,16 +23,32 @@ public class DataToFile
         this.useEncryption = useEncryption;
     }
 
+    public static bool test = true;
+
     public GameData Load()
     {
-        saveIndex = PlayerPrefs.GetInt("saveIndex") - 1;
         string fullPath = Path.Combine(dataDirPath, saveFolderName, dataFileName);
-        Debug.Log(fullPath);
+        saveIndex = PlayerPrefs.GetInt("saveIndex") - 1;
+
+        if (test)
+        {
+            fullPath += ".json";
+        }
+        else
+        {
+            char letter = fullPath[fullPath.Length - 1];
+            bool isNumber = char.IsDigit(letter);
+            if(isNumber)
+                fullPath += ".json";
+            else
+                fullPath = fullPath + saveIndex + ".json";
+        }
 
         GameData loadedData = null;
 
         if (File.Exists(fullPath))
         {
+            Debug.Log(fullPath);
             try
             {
                 string dataToLoad = "";
@@ -67,6 +84,8 @@ public class DataToFile
         dataFileName = DataManager.GetInstance().GetFileName();
 
         string fullPath = Path.Combine(dataDirPath, saveFolderName, dataFileName + saveIndex.ToString() + ".json");
+        Debug.Log(fullPath);
+
         try
         {
             Directory.CreateDirectory(Path.GetDirectoryName(fullPath));

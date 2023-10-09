@@ -33,7 +33,6 @@ public class ChestInvUI : MonoBehaviour
     {
         instance = this;
         inventory = ChestInvManager.GetInstance();
-        print("ChestUI");
         inventory.onItemChangedCallback += UpdateUI;
         slots = GetComponentsInChildren<ScrollViewItem>();
     }

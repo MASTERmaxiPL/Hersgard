@@ -17,7 +17,6 @@ public class MainMenu : MonoBehaviour
         instance = this;
         if(PlayerPrefs.GetInt("saveIndex") <= -1)
         {
-            Debug.Log("test");
             PlayerPrefs.SetInt("saveIndex", -1);
         }
     }
@@ -100,6 +99,7 @@ public class MainMenu : MonoBehaviour
     #endregion
     private void OnEnable()
     {
+        DataToFile.test = true;
         EventSystem.current.SetSelectedGameObject(null);
 
         if (!DataManager.GetInstance().CheckIfDataSaveExists())
@@ -113,7 +113,7 @@ public class MainMenu : MonoBehaviour
         }
         else
         {
-            cont.onClick.AddListener(Continue);
+            cont.onClick.AddListener(ContinueBtnListener);
             EventSystem.current.SetSelectedGameObject(cont.gameObject);
         }
     }
@@ -162,6 +162,12 @@ public class MainMenu : MonoBehaviour
         loadSavePanel.SetActive(false);
         Cursor.visible = false;
         InputSystem.DisableDevice(Mouse.current);
+    }
+
+    private void ContinueBtnListener()
+    {
+        DataToFile.test = false;
+        Continue();
     }
 
     public void Continue()
@@ -297,7 +303,7 @@ public class MainMenu : MonoBehaviour
 
     private void RemoveEventListeners()
     {
-        cont.onClick.RemoveListener(Continue);
+        cont.onClick.RemoveListener(ContinueBtnListener);
         new_Game.onClick.RemoveListener(NewGame);
         load_Save.onClick.RemoveListener(LoadSaves);
         settings.onClick.RemoveListener(GoToSettings);

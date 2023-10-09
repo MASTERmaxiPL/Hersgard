@@ -73,6 +73,7 @@ public class DataManager : MonoBehaviour
 
         foreach(IData data in dataObjects)
         {
+            Debug.Log(gameData.xPosition);
             data.LoadData(gameData);
         }
     }
